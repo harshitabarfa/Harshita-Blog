@@ -1,0 +1,167 @@
+body {
+  margin: 0px;
+  font-family: papyrus, fantasy;
+  background-color: #f8f9fa;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.blog-list {
+  list-style: none;
+  margin-right: 40px;
+  /* margin-left: 10px; */
+  margin-top: 40px;
+}
+
+.blog-box {
+  box-shadow: 2px 5px 5px 2px rgba(128, 128, 128, 0.199);
+  margin-bottom: 30px;
+}
+
+.blog-post {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 9 1;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.blog-image{
+  height: 200px;
+  width: 150px;
+  margin-top: 15px;
+}
+
+.blog-title {
+  font-size: 25px;
+  margin: 0;
+}
+
+.blog-buttons {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.blog-date {
+  margin: 0;
+  font-weight: bold;
+}
+
+.blog-box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.blog-content {
+  margin: 0;
+  padding-top: 18px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+
+.blog-buttons{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.blog-button {
+  background-color: #7091E6;
+  border-radius: 100px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: papyrus, fantasy;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 14px;
+  touch-action: manipulation;
+  margin: 5px;
+}
+
+.blog-button:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+@media screen and (max-width: 768px) {
+  #header{
+    height: 70%;
+    padding-bottom: 1%;
+  }
+  h1{
+    font-size: 28px;
+  }
+  .blog-title{
+    font-size: 1.30rem;
+  }
+  .blog-buttons{
+    margin-top: 20px;
+  }
+  .blog-date{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #header{
+    height: 50%;
+    padding-bottom: 1%;
+  }
+  h1{
+    font-size: 25px;
+  }
+  .blog-title{
+    font-size: 1rem;
+  }
+  .blog-image{
+    height: 200px;
+  }
+  .blog-date{
+    font-size: 5px;
+  }
+  .blog-content{
+    font-size: 1rem;
+  }
+  .blog-buttons{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  h1{
+    font-size: 23px;
+  }
+  .blog-buttons{
+    display: none;
+  }
+  .blog-date{
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .blog-list{
+    margin: 20px;
+    padding: 0;
+  }
+  .blog-date{
+    font-size: 9px;
+  }
+}
